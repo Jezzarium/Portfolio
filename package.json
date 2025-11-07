@@ -14,5 +14,8 @@
   },
   "overrides": {
     "vite": "npm:rolldown-vite@7.1.14"
+  },
+  "dependencies": {
+    "esbuild": "^0.25.12"
   }
 }
