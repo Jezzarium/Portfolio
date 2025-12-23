@@ -2,7 +2,9 @@
     import { onMount } from "svelte";
     import * as THREE from "three";
     import { SplatMesh } from "@sparkjsdev/spark";
-    import splatURL from "../assets/P1037130.ply?url";
+    // import splatURL from "../assets/P1037130.ply?url";
+    const splatURL =
+        "https://pub-be878abefabe4fbfbadb730928721595.r2.dev/P1037130.ply";
 
     let container: HTMLDivElement;
 
