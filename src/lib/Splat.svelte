@@ -40,7 +40,16 @@
             targetX = (event.clientX / window.innerWidth) * 2 - 1;
             targetY = -(event.clientY / window.innerHeight) * 2 + 1;
         };
+
+        const onDeviceOrientation = (event: DeviceOrientationEvent) => {
+            if (event.gamma !== null && event.beta !== null) {
+                targetX = Math.max(-1, Math.min(1, event.gamma / 30));
+                targetY = Math.max(-1, Math.min(1, event.beta / 30));
+            }
+        };
+
         window.addEventListener("mousemove", onMouseMove);
+        window.addEventListener("deviceorientation", onDeviceOrientation);
 
         renderer.setAnimationLoop(() => {
             const smoothing = 0.01;
