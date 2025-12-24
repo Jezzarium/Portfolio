@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Splat from "./lib/Splat.svelte";
+  import Main from "./lib/Main.svelte";
 </script>
 
-<Splat />
+<Main />

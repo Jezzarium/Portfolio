@@ -95,7 +95,7 @@
                             dyno.unindentLines(`
                             ${outputs.gsplat} = ${inputs.gsplat};
                             float t = ${inputs.t};
-                            float s = smoothstep(0.,10.,t-4.5)*${effectMaxRadius.toFixed(1)};
+                            float s = smoothstep(0.,6.,t-1.5)*${effectMaxRadius.toFixed(1)};
                             vec3 scales = ${inputs.gsplat}.scales;
                             
                             // Effect Center
@@ -114,9 +114,10 @@
                             ${outputs.gsplat}.center = p + center + .1*noise(p.xyz*2.+t*.5)*smoothstep(s-.5,s,l+.5);
                             ${outputs.gsplat}.scales = finalScales;
                             
-                            float at = atan(p.x,p.z)/3.1416;
-                            ${outputs.gsplat}.rgba *= step(at,t-3.1416);
-                            ${outputs.gsplat}.rgba += exp(-20.*border) + exp(-50.*abs(t-at-3.1416))*.5;
+                            // Fade in
+                            float fadeIn = smoothstep(0., 2., t);
+                            ${outputs.gsplat}.rgba *= fadeIn;
+                            ${outputs.gsplat}.rgba += exp(-20.*border);
 
                         `),
                     });
