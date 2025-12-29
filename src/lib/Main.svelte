@@ -2,7 +2,7 @@
     import "./Main.css";
     let showSplat = $state(false);
     import Splat from "./Splat.svelte";
-    import AnimeDemo from "./AnimeDemo.svelte";
+    import Intro from "./Intro.svelte";
 </script>
 
 <main class="main">
@@ -17,5 +17,5 @@
             {showSplat ? "HIDE SPLAT" : "SHOW SPLAT"}
         </button>
     </div>
-    <AnimeDemo />
+    <Intro />
 </main>

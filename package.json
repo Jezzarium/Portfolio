@@ -23,6 +23,7 @@
     "vite": "npm:rolldown-vite@7.2.5"
   },
   "dependencies": {
+    "@rolldown/binding-darwin-arm64": "^1.0.0-beta.50",
     "@sparkjsdev/spark": "^0.1.10",
     "animejs": "^4.2.2",
     "three": "^0.182.0"
