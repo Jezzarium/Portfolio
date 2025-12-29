@@ -1,7 +1,8 @@
 <script lang="ts">
     import "./Main.css";
-    let showSplat = $state(true);
+    let showSplat = $state(false);
     import Splat from "./Splat.svelte";
+    import AnimeDemo from "./AnimeDemo.svelte";
 </script>
 
 <main class="main">
@@ -16,4 +17,5 @@
             {showSplat ? "HIDE SPLAT" : "SHOW SPLAT"}
         </button>
     </div>
+    <AnimeDemo />
 </main>
