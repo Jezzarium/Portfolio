@@ -1,8 +1,10 @@
 <script lang="ts">
     import "./Main.css";
     let showSplat = $state(false);
+    let showHome = $state(false);
     import Splat from "./Splat.svelte";
     import Intro from "./Intro.svelte";
+    import Home from "./Home.svelte";
 </script>
 
 <main class="main">
@@ -17,5 +19,9 @@
             {showSplat ? "HIDE SPLAT" : "SHOW SPLAT"}
         </button>
     </div>
-    <Intro />
+    {#if showHome}
+        <Home />
+    {:else}
+        <Intro oncomplete={() => (showHome = true)} />
+    {/if}
 </main>
