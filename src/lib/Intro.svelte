@@ -17,10 +17,19 @@
     let NameText: HTMLElement;
 
     onMount(() => {
+        const hiWidth = hiText.offsetWidth;
+        const nameWidth = NameText.offsetWidth;
+        const totalWidth = hiWidth + nameWidth;
+
+        const hiStart = -hiWidth / 2;
+        const hiEnd = -totalWidth / 2;
+        const nameEnd = -totalWidth / 2 + hiWidth;
+
         timeline.add(
             hiText,
             {
                 opacity: [0, 1],
+                translateX: [hiStart, hiStart],
                 filter: ["blur(10px)", "blur(0px)"],
                 duration: 800,
                 easing: "easeOutExpo",
@@ -31,7 +40,7 @@
         timeline.add(
             hiText,
             {
-                translateX: [0, -130],
+                translateX: [hiStart, hiEnd],
                 duration: 800,
                 easing: "easeOutExpo",
             },
@@ -42,7 +51,7 @@
             NameText,
             {
                 opacity: [0, 1],
-                translateX: [50, -85],
+                translateX: [50, nameEnd],
                 filter: ["blur(10px)", "blur(0px)"],
                 duration: 800,
                 easing: "easeOutExpo",
@@ -88,5 +97,7 @@
         opacity: 0;
         position: absolute;
         left: 50%;
+        white-space: nowrap;
+        text-align: center;
     }
 </style>
