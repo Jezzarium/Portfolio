@@ -7,7 +7,7 @@
     const timeline = createTimeline({
         defaults: {
             ease: "out(3)",
-            duration: 2000,
+            duration: 4000,
         },
         loop: false,
         autoplay: false,
@@ -16,22 +16,16 @@
     let hiText: HTMLElement;
     let NameText: HTMLElement;
 
+    const animationDuration = 1000;
+
     onMount(() => {
-        const hiWidth = hiText.offsetWidth;
-        const nameWidth = NameText.offsetWidth;
-        const totalWidth = hiWidth + nameWidth;
-
-        const hiStart = -hiWidth / 2;
-        const hiEnd = -totalWidth / 2;
-        const nameEnd = -totalWidth / 2 + hiWidth;
-
         timeline.add(
             hiText,
             {
                 opacity: [0, 1],
-                translateX: [hiStart, hiStart],
+                translateX: [0, 0],
                 filter: ["blur(10px)", "blur(0px)"],
-                duration: 800,
+                duration: animationDuration,
                 easing: "easeOutExpo",
             },
             0,
@@ -40,36 +34,38 @@
         timeline.add(
             hiText,
             {
-                translateX: [hiStart, hiEnd],
-                duration: 800,
+                opacity: [1, 0],
+                translateX: [0, -50],
+                filter: ["blur(0px)", "blur(10px)"],
+                duration: animationDuration,
                 easing: "easeOutExpo",
             },
-            800,
+            1500,
         );
 
         timeline.add(
             NameText,
             {
                 opacity: [0, 1],
-                translateX: [50, nameEnd],
+                translateX: [50, 0],
                 filter: ["blur(10px)", "blur(0px)"],
-                duration: 800,
+                duration: animationDuration,
                 easing: "easeOutExpo",
             },
-            800,
+            1500,
         );
 
         timeline.add(
-            [hiText, NameText],
+            NameText,
             {
                 opacity: [1, 0],
+                translateX: [0, 0],
                 filter: ["blur(0px)", "blur(10px)"],
-                duration: 500,
-                easing: "easeInExpo",
-                delay: 800,
+                duration: animationDuration,
+                easing: "easeOutExpo",
                 onComplete: () => oncomplete?.(),
             },
-            1800,
+            3800,
         );
 
         timeline.play();
@@ -78,26 +74,25 @@
 
 <div class="intro">
     <h1 class="google-sans hdr-text" bind:this={hiText}>Hi</h1>
-    <h1 class="google-sans hdr-text" bind:this={NameText}>, I'm Justin</h1>
+    <h1 class="google-sans hdr-text" bind:this={NameText}>
+        Welcome to my portfolio
+    </h1>
 </div>
 
 <style>
     .intro {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        display: grid;
+        place-items: center;
         height: 100%;
         font-size: 1.5rem;
-        gap: 0.5rem;
         position: relative;
     }
 
     .intro h1 {
         opacity: 0;
-        position: absolute;
-        left: 50%;
-        white-space: nowrap;
+        grid-area: 1 / 1;
         text-align: center;
+        white-space: nowrap;
+        margin: 0;
     }
 </style>
