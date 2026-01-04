@@ -73,10 +73,8 @@
 </script>
 
 <div class="intro">
-    <h1 class="google-sans hdr-text" bind:this={hiText}>Hi</h1>
-    <h1 class="google-sans hdr-text" bind:this={NameText}>
-        Welcome to my portfolio
-    </h1>
+    <h1 class="google-sans" bind:this={hiText}>Hi</h1>
+    <h1 class="google-sans" bind:this={NameText}>Welcome to my portfolio</h1>
 </div>
 
 <style>
@@ -92,7 +90,7 @@
         opacity: 0;
         grid-area: 1 / 1;
         text-align: center;
-        white-space: nowrap;
         margin: 0;
+        color: white;
     }
 </style>
