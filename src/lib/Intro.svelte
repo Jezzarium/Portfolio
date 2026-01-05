@@ -84,6 +84,14 @@
         height: 100%;
         font-size: 1.5rem;
         position: relative;
+        overflow: hidden;
+        touch-action: none;
+    }
+
+    @media (width < 400px) {
+        .intro {
+            font-size: 1.2rem;
+        }
     }
 
     .intro h1 {
