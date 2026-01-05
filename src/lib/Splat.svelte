@@ -10,6 +10,7 @@
     const effectMaxRadius = 400;
 
     let container: HTMLDivElement;
+    let isLoading = true;
 
     onMount(() => {
         const scene = new THREE.Scene();
@@ -33,12 +34,19 @@
         let baseTime = 0;
         let splatLoaded = false;
 
-        const butterfly = new SplatMesh({ url: splatURL });
-        butterfly.quaternion.set(1, 0, 0, 0);
-        butterfly.position.set(initX, initY, 4);
-        scene.add(butterfly);
+        const splat = new SplatMesh({
+            url: splatURL,
+            onLoad: () => {
+                isLoading = false;
+                splatLoaded = true;
+                baseTime = 0;
+            },
+        });
+        splat.quaternion.set(1, 0, 0, 0);
+        splat.position.set(initX, initY, 4);
+        scene.add(splat);
 
-        setupSplatModifier(butterfly, animateT, {
+        setupSplatModifier(splat, animateT, {
             center: effectCenter,
             maxRadius: effectMaxRadius,
             noiseIntensity: 0.1,
@@ -48,9 +56,6 @@
             fadeInDuration: 2,
             borderWidth: 0.5,
         });
-
-        splatLoaded = true;
-        baseTime = 0;
 
         let mouseX = 0;
         let mouseY = 0;
@@ -86,15 +91,15 @@
                 if (splatLoaded) {
                     baseTime += 1 / 30;
                     animateT.value = baseTime;
-                    butterfly.updateVersion();
+                    splat.updateVersion();
                 }
 
                 const smoothing = 0.05;
                 mouseX += (targetX - mouseX) * smoothing;
                 mouseY += (targetY - mouseY) * smoothing;
 
-                butterfly.position.x = initX + mouseX * 0.2;
-                butterfly.position.y = initY + mouseY * 0.2;
+                splat.position.x = initX + mouseX * 0.2;
+                splat.position.y = initY + mouseY * 0.2;
                 renderer.render(scene, camera);
             }
         });
@@ -118,11 +123,23 @@
     });
 </script>
 
-<div bind:this={container}></div>
+{#if isLoading}
+    <div class="loading">Loading...</div>
+{/if}
+<div bind:this={container} style:opacity={isLoading ? 0 : 1}></div>
 
 <style>
     :global(body) {
         margin: 0;
         overflow: hidden;
+    }
+    .loading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-family: sans-serif;
+        font-size: 1.5rem;
     }
 </style>
