@@ -24,7 +24,6 @@
   },
   "dependencies": {
     "@sparkjsdev/spark": "^0.1.10",
-    "animejs": "^4.2.2",
-    "three": "^0.182.0"
+    "animejs": "^4.2.2"
   }
 }

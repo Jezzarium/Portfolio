@@ -9,24 +9,13 @@
 
     initNavigation();
 
-    let showSplat = $state(false);
-    import Splat from "./Splat.svelte";
     import Intro from "./Intro.svelte";
     import Home from "./Home.svelte";
     import Blog from "./Blog.svelte";
 </script>
 
 <main class="main">
-    <div>
-        {#if showSplat}
-            <Splat />
-        {/if}
-    </div>
-
     <div class="controls-container">
-        <button class="toggle-button" onclick={() => (showSplat = !showSplat)}>
-            {showSplat ? "HIDE SPLAT" : "SHOW SPLAT"}
-        </button>
         {#if navigationState.page !== Page.Intro}
             <button
                 class="toggle-button"
