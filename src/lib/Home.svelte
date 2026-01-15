@@ -1,37 +1,37 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
-  import { animate } from 'animejs';
-
-  let home: HTMLElement;
-
-  onMount(() => {
-    animate(home, {
-      opacity: [0, 1],
-      filter: ['blur(10px)', 'blur(0px)'],
-      duration: 800,
-      easing: 'easeOutExpo',
-    });
-  });
+  import { Page } from './types';
+  import Button from './Button.svelte';
+  import { fadeBlur } from './transitions/fadeBlur';
 </script>
 
-<div class="home" bind:this={home}>
+<div class="home" in:fadeBlur>
   <div class="title">
     <h1 class="google-sans">Justin Abourjaili-Bilodeau</h1>
+    <div class="links"></div>
   </div>
 
-  <div class="links"></div>
-  <div class="desc"></div>
-  <div class="nav"></div>
+  <div class="desc google-sans">
+    Software Engineering student at Polytechnique Montreal passionate about
+    software development.
+  </div>
+  <div class="nav">
+    <Button page={Page.Blog} label="Blog" />
+    <Button page={Page.Personal} label="Personal" />
+    <Button page={Page.Academic} label="Academic" />
+    <Button page={Page.Projects} label="Projects" />
+  </div>
 </div>
 
 <style>
   .home {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
     color: white;
-    opacity: 0;
+  }
+  .desc {
+    font-size: 1rem;
   }
 </style>

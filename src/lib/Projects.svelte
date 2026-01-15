@@ -2,13 +2,13 @@
   import { fadeBlur } from './transitions/fadeBlur';
 </script>
 
-<div class="blog" in:fadeBlur>
-  <h1 class="google-sans">Blog</h1>
+<div class="projects" in:fadeBlur>
+  <h1 class="google-sans">Projects</h1>
   <p>Coming soon...</p>
 </div>
 
 <style>
-  .blog {
+  .projects {
     display: flex;
     flex-direction: column;
     align-items: center;
