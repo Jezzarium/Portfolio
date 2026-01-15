@@ -1,5 +1,5 @@
 export enum Page {
-    Intro,
-    Home,
-    Blog
+  Intro,
+  Home,
+  Blog,
 }
