@@ -73,8 +73,8 @@
 </script>
 
 <div class="intro">
-  <h1 class="google-sans" bind:this={hiText}>Hi</h1>
-  <h1 class="google-sans" bind:this={NameText}>Welcome to my portfolio</h1>
+  <h1 class="roboto" bind:this={hiText}>Hi</h1>
+  <h1 class="roboto" bind:this={NameText}>Welcome to my portfolio</h1>
 </div>
 
 <style>

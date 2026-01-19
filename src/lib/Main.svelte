@@ -17,7 +17,7 @@
   import Projects from './Projects.svelte';
 </script>
 
-<header class="wip-header google-sans">
+<header class="wip-header roboto">
   <p>
     Hey! This website is still heavily work in progress and is missing many
     features.
