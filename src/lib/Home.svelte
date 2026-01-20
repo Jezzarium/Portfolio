@@ -8,12 +8,12 @@
   <div class="fill"></div>
 
   <div class="title">
-    <h1 class="roboto">Hello, I'm Justin</h1>
+    <h1 class="mainfont">Hello, I'm Justin</h1>
   </div>
 
   <div class="links">links</div>
 
-  <div class="desc roboto">
+  <div class="desc mainfont">
     I'm a Software Engineering student at Polytechnique Montreal.
   </div>
 
@@ -41,6 +41,7 @@
     color: white;
     width: 90%;
     margin: 0 auto;
+    padding: 0 1.5rem;
   }
 
   .fill {
@@ -85,6 +86,7 @@
   @media (max-width: 767px) {
     .home {
       width: 400px;
+      touch-action: none;
     }
   }
 

@@ -3,7 +3,7 @@
 </script>
 
 <div class="personal" in:fadeBlur>
-  <h1 class="roboto">Personal</h1>
+  <h1 class="mainfont">Personal</h1>
   <p>Coming soon...</p>
 </div>
 
