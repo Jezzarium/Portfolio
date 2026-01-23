@@ -12,10 +12,10 @@
 
     <div class="desc mainfont">
       I'm a third year Software Engineering student at Polytechnique Montreal. I
-      have experience in Full Stack web development and have done multiple
-      projects in C++ and Python. I'm interested in Cybersecurity, AI and
-      everything related to Human-Computer Interaction, but I'm always eager to
-      learn and explore new fields!
+      have experience in Full Stack Web development and have worked on multiple
+      projects in C++ and Python. I'm interested in cybersecurity, game
+      development and everything related to Human-Computer Interaction, but I'm
+      always eager to learn and explore new fields!
     </div>
   </div>
 
