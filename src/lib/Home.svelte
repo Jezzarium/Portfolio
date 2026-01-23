@@ -6,9 +6,7 @@
 
 <div class="home" in:fadeBlur>
   <div class="content">
-    <div class="title">
-      <div class="mainfont">Hey, I'm Justin</div>
-    </div>
+    <div class="title mainfont">Hey, I'm Justin</div>
 
     <div class="desc mainfont">
       I'm a third year Software Engineering student at Polytechnique Montreal. I
@@ -47,6 +45,7 @@
   .title {
     font-size: 4rem;
     flex-shrink: 0;
+    font-weight: 500;
   }
 
   .desc {
