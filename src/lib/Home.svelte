@@ -5,102 +5,81 @@
 </script>
 
 <div class="home" in:fadeBlur>
-  <div class="fill"></div>
+  <div class="content">
+    <div class="title">
+      <div class="mainfont">Hey, I'm Justin</div>
+    </div>
 
-  <div class="title">
-    <h1 class="mainfont">Hello, I'm Justin</h1>
-  </div>
-
-  <div class="links">links</div>
-
-  <div class="desc mainfont">
-    I'm a Software Engineering student at Polytechnique Montreal.
+    <div class="desc mainfont">
+      I'm a third year Software Engineering student at Polytechnique Montreal. I
+      have experience in Full Stack web development and have done multiple
+      projects in C++ and Python. I'm interested in Cybersecurity, AI and
+      everything related to Human-Computer Interaction, but I'm always eager to
+      learn and explore new fields!
+    </div>
   </div>
 
   <div class="nav">
-    <Button page={Page.Blog} label="Blog" />
+    <!-- <Button page={Page.Blog} label="Blog" /> -->
     <Button page={Page.Personal} label="Personal" />
     <Button page={Page.Academic} label="Academic" />
     <Button page={Page.Projects} label="Projects" />
   </div>
-
-  <div class="fill2"></div>
 </div>
 
 <style>
   .home {
-    display: grid;
-    grid-template-areas:
-      'fill fill'
-      'title links'
-      'desc desc'
-      'nav nav'
-      'fill2 fill2';
-    grid-template-rows: 1fr auto auto auto auto 1fr;
-    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
     color: white;
     width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
+    touch-action: none;
   }
 
-  .fill {
-    grid-area: fill;
+  .content {
+    flex: 1;
   }
 
   .title {
-    grid-area: title;
-    font-size: 1.3rem;
-  }
-
-  .links {
-    grid-area: links;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
+    font-size: 4rem;
+    flex-shrink: 0;
   }
 
   .desc {
-    grid-area: desc;
-    font-size: 1rem;
+    font-size: 1.4rem;
     padding: 1rem 0;
+    flex-shrink: 0;
   }
 
   .nav {
-    grid-area: nav;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     gap: 20px;
-    width: 80%;
-    padding: 1rem 0;
-    margin: 0 auto;
+    flex-shrink: 0;
   }
 
-  .fill2 {
-    grid-area: fill2;
-  }
-
-  /* Mobile: < 768px */
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .home {
-      width: 400px;
-      touch-action: none;
+      flex-direction: column;
+      gap: 2rem;
     }
-  }
 
-  /* Tablet: 768px - 1024px */
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .home {
-      width: 600px;
+    .title {
+      font-size: 2.5rem;
     }
-  }
 
-  /* Desktop: > 1024px */
-  @media (min-width: 1025px) {
-    .home {
-      width: 900px;
+    .desc {
+      font-size: 1.1rem;
+    }
+
+    .nav {
+      width: 100%;
+      align-items: center;
     }
   }
 </style>

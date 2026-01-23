@@ -4,7 +4,7 @@
 
 <div class="projects" in:fadeBlur>
   <h1 class="mainfont">Projects</h1>
-  <p>Coming soon...</p>
+  <p>Coming soon... this page is gonna be cool soon</p>
 </div>
 
 <style>

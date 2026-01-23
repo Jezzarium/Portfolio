@@ -19,16 +19,16 @@
     background-color: #1a1a1a;
     color: white;
     font-family: 'Google Sans', sans-serif;
+    font-size: 1.4rem;
     padding: 12px;
     border: none;
     cursor: pointer;
     aspect-ratio: 1 / 1;
-    min-width: 100px;
-    height: 40px;
+    height: 60px;
+    width: 240px;
   }
 
   button:hover {
-    background-color: white;
-    color: #000;
+    background-color: #fc6b03;
   }
 </style>

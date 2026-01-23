@@ -4,20 +4,24 @@
 
 <div class="academic" in:fadeBlur>
   <h1 class="mainfont">Academic</h1>
-  
+
   <div class="grid-container">
     <section class="academic-section">
       <h2 class="mainfont">Academic Experience</h2>
       <ul>
-        <li>B.Eng in Software Engineering - Polytechnique Montreal (2023-2027)</li>
-        <li>DEC in Healt Science - Champlain College St-Lambert (2021-2023)</li>
+        <li>
+          B.Eng in Software Engineering - Polytechnique Montreal (2023-2027)
+        </li>
+        <li>
+          DEC in Health Science - Champlain College St-Lambert (2021-2023)
+        </li>
       </ul>
     </section>
 
     <section class="work-section">
       <h2 class="mainfont">Work Experience</h2>
       <ul>
-        <li>Security Analyst - Genetec (Summer 2025)</li>
+        <li>Security Analyst Internship - Genetec (Summer 2025)</li>
       </ul>
     </section>
   </div>

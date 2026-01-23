@@ -15,14 +15,19 @@
   import Personal from './Personal.svelte';
   import Academic from './Academic.svelte';
   import Projects from './Projects.svelte';
+  import Header from './Header.svelte';
+
+  const showHeader = $derived(
+    navigationState.page === Page.Blog ||
+      navigationState.page === Page.Personal ||
+      navigationState.page === Page.Academic ||
+      navigationState.page === Page.Projects
+  );
 </script>
 
-<header class="wip-header mainfont">
-  <p>
-    Hey! This website is still heavily work in progress and is missing many
-    features.
-  </p>
-</header>
+{#if showHeader}
+  <Header currentPage={navigationState.page} />
+{/if}
 
 <main class="main">
   {#if navigationState.page === Page.Home}
