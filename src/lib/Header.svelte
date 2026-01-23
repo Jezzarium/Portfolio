@@ -11,7 +11,7 @@
 
   const pages = [
     { page: PageEnum.Home, label: 'Home', mobileOnly: true },
-    { page: PageEnum.Personal, label: 'Personal', mobileOnly: false },
+    { page: PageEnum.Personal, label: 'About Me', mobileOnly: false },
     {
       page: PageEnum.Academic,
       label: 'Academic and Work',

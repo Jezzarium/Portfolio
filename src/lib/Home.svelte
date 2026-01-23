@@ -21,8 +21,8 @@
 
   <div class="nav">
     <!-- <Button page={Page.Blog} label="Blog" /> -->
-    <Button page={Page.Personal} label="Personal" />
-    <Button page={Page.Academic} label="Academic" />
+    <Button page={Page.Personal} label="About Me" />
+    <Button page={Page.Academic} label="Academic and Work Experience" />
     <Button page={Page.Projects} label="Projects" />
   </div>
 </div>
@@ -34,7 +34,6 @@
     align-items: center;
     gap: 3rem;
     color: white;
-    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
@@ -54,6 +53,7 @@
     font-size: 1.4rem;
     padding: 1rem 0;
     flex-shrink: 0;
+    text-align: justify;
   }
 
   .nav {

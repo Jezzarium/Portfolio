@@ -3,8 +3,6 @@
 </script>
 
 <div class="academic" in:fadeBlur>
-  <h1 class="mainfont">Academic</h1>
-
   <div class="grid-container">
     <section class="academic-section">
       <h2 class="mainfont">Academic Experience</h2>
@@ -35,11 +33,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-  }
-
-  .academic h1 {
-    text-align: center;
-    margin-bottom: 2rem;
   }
 
   .grid-container {

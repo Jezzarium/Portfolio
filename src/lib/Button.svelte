@@ -24,7 +24,7 @@
     border: none;
     cursor: pointer;
     aspect-ratio: 1 / 1;
-    height: 60px;
+    height: 80px;
     width: 240px;
   }
 
