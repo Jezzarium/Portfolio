@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Project One",
+    "description": "A brief description of the first project goes here. Click to learn more.",
+    "image": "https://placehold.co/640x360/1a1a1a/fff?text=Project+1",
+    "url": "https://example.com/project-one"
+  },
+  {
+    "title": "Project Two",
+    "description": "A brief description of the second project goes here. Click to learn more.",
+    "image": "https://placehold.co/640x360/1a1a1a/fff?text=Project+2",
+    "url": "https://example.com/project-two"
+  },
+  {
+    "title": "Project Three",
+    "description": "A brief description of the third project goes here. Click to learn more.",
+    "image": "https://placehold.co/640x360/1a1a1a/fff?text=Project+3",
+    "url": "https://example.com/project-three"
+  }
+]
