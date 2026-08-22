@@ -1,20 +1,20 @@
 [
   {
-    "title": "Project One",
-    "description": "A brief description of the first project goes here. Click to learn more.",
-    "image": "https://placehold.co/640x360/1a1a1a/fff?text=Project+1",
-    "url": "https://example.com/project-one"
+    "title": "This Portfolio Website",
+    "description": "My portfolio website written in Svelte 5.",
+    "image": "https://www.whiteoakwildlife.org/wp-content/uploads/2020/08/gerenuk-for-feature-2.jpg",
+    "url": "https://github.com/Jezzarium/Portfolio"
   },
   {
-    "title": "Project Two",
-    "description": "A brief description of the second project goes here. Click to learn more.",
-    "image": "https://placehold.co/640x360/1a1a1a/fff?text=Project+2",
-    "url": "https://example.com/project-two"
+    "title": "Creative Jam 2025",
+    "description": "",
+    "image": "https://img.itch.zone/aW1nLzIzMjY2MjQ4LmpwZw==/347x500/Si48Wr.jpg",
+    "url": "https://fredzero.itch.io/chez-garbagio"
   },
   {
-    "title": "Project Three",
-    "description": "A brief description of the third project goes here. Click to learn more.",
-    "image": "https://placehold.co/640x360/1a1a1a/fff?text=Project+3",
-    "url": "https://example.com/project-three"
+    "title": "McGameJam 2026",
+    "description": "",
+    "image": "https://img.itch.zone/aW1nLzI1MzIwNjUzLnBuZw==/315x250%23c/bVfdx1.png",
+    "url": "https://itch.io/jam/mcgamejam-2026/rate/4247974"
   }
 ]

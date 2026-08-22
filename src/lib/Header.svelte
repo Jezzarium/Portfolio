@@ -77,7 +77,7 @@
   }
 
   .name-button:hover {
-    color: #fc6b03;
+    color: var(--color-highlight);
   }
 
   .nav-links {
@@ -102,7 +102,7 @@
   }
 
   .nav-link:hover {
-    color: #fc6b03;
+    color: var(--color-highlight);
   }
 
   .mobile-only {

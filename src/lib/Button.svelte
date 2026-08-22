@@ -29,6 +29,6 @@
   }
 
   button:hover {
-    background-color: #fc6b03;
+    background-color: var(--color-highlight);
   }
 </style>

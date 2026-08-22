@@ -9,11 +9,11 @@
     <div class="title mainfont">Hey, I'm Justin</div>
 
     <div class="desc mainfont">
-      I'm a third year Software Engineering student at Polytechnique Montreal. I
-      have experience in Full Stack Web development and have worked on multiple
-      projects in C++ and Python. I'm interested in cybersecurity, game
-      development and everything related to Human-Computer Interaction, but I'm
-      always eager to learn and explore new fields!
+      I'm a fourth year Software Engineering student at Polytechnique Montreal.
+      I have experience in Full Stack Web development and have worked on
+      multiple projects in Go, C++ and Python. I'm interested in cybersecurity,
+      game development and everything related to Human-Computer Interaction, but
+      I'm always eager to learn and explore new fields!
     </div>
   </div>
 

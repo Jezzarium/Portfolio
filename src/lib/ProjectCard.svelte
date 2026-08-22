@@ -24,7 +24,6 @@
     display: flex;
     flex-direction: column;
     background-color: #1a1a1a;
-    border-radius: 8px;
     overflow: hidden;
     text-decoration: none;
     color: white;
@@ -35,13 +34,12 @@
   }
 
   .project-card:hover {
-    transform: translateY(-4px);
     background-color: #2a2a2a;
   }
 
   .image-container {
     width: 100%;
-    height: 180px;
+    height: 240px;
     overflow: hidden;
   }
 

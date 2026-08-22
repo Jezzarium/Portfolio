@@ -3,10 +3,8 @@
 </script>
 
 <div class="personal" in:fadeBlur>
-  <h1 class="mainfont">Personal</h1>
-  <p>
-    Coming soon... The academic and work experience section has stuff though
-  </p>
+  <h1>Personal</h1>
+  <p>Work in progress...</p>
 </div>
 
 <style>
