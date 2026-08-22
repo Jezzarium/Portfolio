@@ -2,7 +2,7 @@
   import { fadeBlur } from './transitions/fadeBlur';
 </script>
 
-<div class="academic mainfont" in:fadeBlur>
+<div class="academic" in:fadeBlur>
   <div class="grid-container">
     <section class="academic-section">
       <h2>Academic Experience</h2>

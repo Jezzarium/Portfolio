@@ -14,8 +14,8 @@
     <img src={image} alt={title} />
   </div>
   <div class="content">
-    <h2 class="title mainfont">{title}</h2>
-    <p class="desc mainfont">{description}</p>
+    <h2 class="title">{title}</h2>
+    <p class="desc">{description}</p>
   </div>
 </a>
 

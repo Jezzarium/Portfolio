@@ -5,7 +5,7 @@
 </script>
 
 <div class="projects" in:fadeBlur>
-  <h1 class="mainfont">Projects</h1>
+  <h1>Projects</h1>
   <div class="grid">
     {#each projects as project (project.title)}
       <ProjectCard

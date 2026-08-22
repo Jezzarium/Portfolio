@@ -6,9 +6,9 @@
 
 <div class="home" in:fadeBlur>
   <div class="content">
-    <div class="title mainfont">Hey, I'm Justin</div>
+    <div class="title">Hey, I'm Justin</div>
 
-    <div class="desc mainfont">
+    <div class="desc">
       I'm a fourth year Software Engineering student at Polytechnique Montreal.
       I have experience in Full Stack Web development and have worked on
       multiple projects in Go, C++ and Python. I'm interested in cybersecurity,
