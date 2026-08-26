@@ -5,6 +5,7 @@
 <div class="personal" in:fadeBlur>
   <h1>Personal</h1>
   <p>Work in progress...</p>
+  <div class="content"></div>
 </div>
 
 <style>
@@ -15,5 +16,9 @@
     justify-content: center;
     height: 100%;
     color: white;
+  }
+
+  .content {
+    display: grid;
   }
 </style>

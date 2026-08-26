@@ -28,9 +28,6 @@
     text-decoration: none;
     color: white;
     width: 320px;
-    transition:
-      transform 0.2s ease,
-      background-color 0.2s ease;
   }
 
   .project-card:hover {
