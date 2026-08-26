@@ -55,7 +55,7 @@
   @media (max-width: 700px) {
     .content{
       grid-template-areas: "image" "desc";
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: auto 1fr;
       grid-template-columns: auto; 
     }
   }

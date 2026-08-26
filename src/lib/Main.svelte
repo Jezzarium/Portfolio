@@ -29,7 +29,7 @@
   <Header currentPage={navigationState.page} />
 {/if}
 
-<main class="main">
+<main class="main" class:with-header={showHeader}>
   {#if navigationState.page === Page.Home}
     <Home />
   {:else if navigationState.page === Page.Blog}

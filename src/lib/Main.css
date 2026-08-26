@@ -19,8 +19,12 @@
   display: grid;
   place-items: center;
   min-height: 100dvh;
-  overflow: hidden;
+  overflow-x: clip;
   background-color: #000;
+}
+
+.main.with-header {
+  min-height: calc(100dvh - 50px);
 }
 
 .controls-container {
