@@ -34,7 +34,7 @@
     color: white;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 3rem;
     touch-action: none;
   }
 

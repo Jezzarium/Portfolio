@@ -60,11 +60,6 @@
     line-height: 1.6;
   }
 
-  .link {
-    color: inherit;
-    text-decoration: none;
-  }
-
   @media (max-width: 768px) {
     .grid-container {
       grid-template-columns: 1fr;

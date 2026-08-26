@@ -54,7 +54,6 @@
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 1rem 2rem;
     z-index: 1000;
     height: 50px;
@@ -84,7 +83,7 @@
     display: flex;
     gap: 2rem;
     justify-content: center;
-    flex: 1;
+    flex-direction: row; 
   }
 
   .nav-link {
@@ -109,7 +108,7 @@
     display: none;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 860px) {
     .header {
       padding: 0.75rem 1rem;
       justify-content: center;
@@ -124,7 +123,7 @@
     }
 
     .nav-links {
-      gap: 1rem;
+      gap: 0.8rem;
     }
 
     .nav-link {
