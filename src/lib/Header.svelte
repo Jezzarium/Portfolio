@@ -46,7 +46,7 @@
 
 <style>
   .header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -54,7 +54,7 @@
     color: white;
     display: flex;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
     z-index: 1000;
     height: 50px;
     box-sizing: border-box;
@@ -69,7 +69,7 @@
     background: none;
     border: none;
     color: white;
-    font-size: 1rem;
+    font-size: 1.1rem;
     cursor: pointer;
     padding: 0.25rem 0.5rem;
     font-family: 'Google Sans', sans-serif;
@@ -83,14 +83,14 @@
     display: flex;
     gap: 2rem;
     justify-content: center;
-    flex-direction: row; 
+    flex-direction: row;
   }
 
   .nav-link {
     background: none;
     border: none;
     color: rgba(255, 255, 255, 0.6);
-    font-size: 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
     padding: 0.25rem 0.5rem;
     font-family: 'Google Sans', sans-serif;
@@ -124,10 +124,6 @@
 
     .nav-links {
       gap: 0.8rem;
-    }
-
-    .nav-link {
-      font-size: 0.9rem;
     }
   }
 </style>
