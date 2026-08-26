@@ -5,7 +5,7 @@
 <div class="academic" in:fadeBlur>
   <div class="grid-container">
     <section class="academic-section">
-      <h2 class="mainfont">Academic Experience</h2>
+      <h2>Academic Experience</h2>
       <ul>
         <li>
           B.Eng in Software Engineering - Polytechnique Montreal (2023-2027)
@@ -17,9 +17,10 @@
     </section>
 
     <section class="work-section">
-      <h2 class="mainfont">Work Experience</h2>
+      <h2>Work Experience</h2>
       <ul>
         <li>Security Analyst Internship - Genetec (Summer 2025)</li>
+        <li>Software Developer Internship - Genetec (Summer 2026)</li>
       </ul>
     </section>
   </div>

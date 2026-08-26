@@ -1,4 +1,5 @@
-.mainfont {
+:root {
+  --color-highlight: #8d55ed;
   font-family: 'Google Sans', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
