@@ -7,11 +7,20 @@
   }
 
   let { title, description, image, url }: Props = $props();
+  let loaded = $state(false);
 </script>
 
 <a href={url} target="_blank" rel="noopener noreferrer" class="project-card">
   <div class="image-container">
-    <img src={image} alt={title} />
+    <img
+      src={image}
+      alt={title}
+      onload={() => (loaded = true)}
+      onerror={() => (loaded = true)}
+    />
+    <div class="spinner" class:spinner-hidden={loaded} aria-hidden={loaded}>
+      <span class="spinner-ring"></span>
+    </div>
   </div>
   <div class="content">
     <h2 class="title">{title}</h2>
@@ -35,6 +44,7 @@
   }
 
   .image-container {
+    position: relative;
     width: 100%;
     height: 240px;
     overflow: hidden;
@@ -44,6 +54,36 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  .spinner {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1a1a1a;
+    transition: opacity 0.3s ease;
+  }
+
+  .spinner-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .spinner-ring {
+    width: 3rem;
+    height: 3rem;
+    border: 3px solid rgba(141, 85, 237, 0.2);
+    border-top-color: var(--color-highlight);
+    border-radius: 50%;
+    animation: spinner-rotate 0.8s linear infinite;
+  }
+
+  @keyframes spinner-rotate {
+    to {
+      transform: rotate(360deg);
+    }
   }
 
   .content {
