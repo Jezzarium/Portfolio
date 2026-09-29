@@ -7,14 +7,21 @@
   },
   {
     "title": "Creative Jam 2025",
-    "description": "",
+    "description": "A mini restaurant game designed in 46 hours with a team of 3 programmers and 3 artists.",
     "image": "https://img.itch.zone/aW1nLzIzMjY2MjQ4LmpwZw==/347x500/Si48Wr.jpg",
     "url": "https://fredzero.itch.io/chez-garbagio"
   },
   {
     "title": "McGameJam 2026",
-    "description": "",
+    "description": "A mini game where you take down guards as a witch. Made by a team of 3 programmers and 5 artists.",
     "image": "https://img.itch.zone/aW1nLzI1MzIwNjUzLnBuZw==/315x250%23c/bVfdx1.png",
-    "url": "https://itch.io/jam/mcgamejam-2026/rate/4247974"
+    "url": "https://sophirly.itch.io/witching-hours"
+  },
+  {
+    "title": "Creative Jam 2026",
+    "description": "A mini arcade like boat game made in 46 hours in a team of 3 programmers and 3 artists.",
+    "image": "https://img.itch.zone/aW1nLzMwMTIyMzE2LnBuZw==/original/n9AvP4.png",
+    "url": "https://samsaaam.itch.io/bato-bato"
   }
+
 ]
